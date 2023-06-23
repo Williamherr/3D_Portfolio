@@ -17,8 +17,45 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
-  const handleSubmit = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm((form) => ({ ...form, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .send(
+        "service_my9pjru",
+        "template_7qc4q7o",
+        {
+          from_name: form.name,
+          to_name: "William",
+          from_email: form.email,
+          to_email: "herrwilliam@outlook.com",
+          message: form.message,
+        },
+        "eD3QNCg1S2z72Q4nV"
+      )
+      .then(
+        (res) => {
+          setLoading(false);
+          alert("Thank You, I will get back to you soon!");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.log(error);
+          alert("Something went wrong, please try again!");
+        }
+      );
+  };
 
   return (
     <div
