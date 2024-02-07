@@ -18,6 +18,10 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.svg";
+import nextjs_white from "./tech/nextjs_white.svg";
+
+import dotnet from "./tech/dotnet.svg";
 
 import abacus from "./company/abacus_group_logo.png";
 
@@ -49,4 +53,7 @@ export {
   rush,
   tilt,
   flexibble,
+  nextjs,
+  nextjs_white,
+  dotnet,
 };

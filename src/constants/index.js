@@ -17,6 +17,9 @@ import {
   rush,
   tilt,
   flexibble,
+  nextjs,
+  nextjs_white,
+  dotnet,
 } from "../assets";
 
 export const navLinks = [
@@ -44,12 +47,12 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Next",
-    icon: backend,
+    title: "Next Developer",
+    icon: nextjs_white,
   },
   {
-    title: "React",
-    icon: backend,
+    title: "React Developer",
+    icon: reactjs,
   },
 ];
 
@@ -98,6 +101,14 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
+  {
+    name: "Next JS",
+    icon: nextjs,
+  },
+  {
+    name: ".Net Core",
+    icon: dotnet,
+  },
 ];
 
 const experiences = [
@@ -128,17 +139,6 @@ const tagColors = {
   other: "orange-text-gradient",
 };
 
-const testimonials = [
-  {
-    testimonial:
-      "Will was a rockstar and I could always rely on him to get things done",
-    name: "Zeng Xiong",
-    designation: "Senior Software Engineer",
-    company: "Abacus Group LLC",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-];
-
 const projects = [
   {
     name: "Rush",
@@ -146,7 +146,7 @@ const projects = [
       "Often, when students emailed professors, they took several days to respond to a simple question. Rush is a direct messaging app for students and professors, designed as an alternative to email. Professors can create classes and students can create groups. Users can message each other and the messages are updated in real time.",
     tags: [
       {
-        name: "android studio",
+        name: "android studio (java)",
         color: tagColors.code,
       },
       {
@@ -169,7 +169,7 @@ const projects = [
                   `,
     tags: [
       {
-        name: "Next.js",
+        name: "next.js",
         color: tagColors.code,
       },
       {
@@ -182,7 +182,7 @@ const projects = [
       },
 
       {
-        name: "Clerk Auth",
+        name: "clerk auth",
         color: tagColors.other,
       },
       {
@@ -221,6 +221,28 @@ const projects = [
     ],
     image: flexibble,
     source_code_link: "https://github.com/Williamherr/grafbase_flexibble",
+  },
+];
+const testimonials = [
+  {
+    testimonial:
+      "Will was a rockstar and I could always rely on him to get things done",
+    name: "Zeng Xiong",
+    designation: "Senior Software Engineer",
+    company: "Abacus Group LLC",
+    image:
+      "https://media.licdn.com/dms/image/D4E03AQEoWYOtL5gjsQ/profile-displayphoto-shrink_800_800/0/1704586950523?e=1712793600&v=beta&t=LV3E2qRr9ZFgm0H565POsYVYu_XUdgKsKKaAhv3O7tg",
+    linkedin: "https://www.linkedin.com/in/zengxiong/",
+  },
+  {
+    testimonial:
+      "William is easy to work with and takes instruction well. He is smart, and quickly picks up on things, whether it's problem solving, or processes.",
+    name: "David Olson",
+    designation: "Senior Software Engineer",
+    company: "Abacus Group LLC",
+    image:
+      "https://media.licdn.com/dms/image/C4D03AQHqR-j8X9iV8Q/profile-displayphoto-shrink_800_800/0/1640292659354?e=1712793600&v=beta&t=8kxIGBswKcHxif3tN3tDo7muydCmkRyl6ea_BBNlSJM",
+    linkedin: "https://www.linkedin.com/in/david-olson-372521229/",
   },
 ];
 
