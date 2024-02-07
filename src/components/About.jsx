@@ -39,31 +39,49 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
-
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text=[17px]
       max-w-3x1 leading-[30px]"
       >
         As a full-stack developer, I have honed my skills in both front-end and
-        back-end development. I am proficient in several programming languages
-        such as JavaScript, Java, C#, HTML, and CSS, which empower me to create
-        dynamic and interactive web applications. My expertise extends to
-        working with different databases including MS SQL, Firebase, and
-        MongoDB, enabling me to effectively manage data storage and retrieval.
-        With my diverse skill set and experience, I am capable of developing
-        robust and scalable software solutions that meet the needs of modern
-        businesses. In my free time, I prioritize spending quality moments with
-        my family, cherishing the connections and creating lasting memories. I
-        also find enjoyment in immersing myself in the world of gaming, where I
-        can embark on exciting adventures and challenge my skills. Additionally,
-        I have a great appreciation for anime and indulge in watching
-        captivating series that transport me to captivating storylines and
-        imaginative realms. Balancing these leisure activities alongside my
-        passion for coding allows me to maintain a well-rounded and fulfilling
-        lifestyle.
+        back-end development. My proficiency spans across several programming
+        languages, including JavaScript, Java, C#, HTML, and CSS. Some js
+        framework I have experience with are React and Next. These frameworks
+        and languages are the tools I use to build dynamic and interactive web
+        applications that provide users with a seamless digital experience. In
+        addition to front-end and back-end development, I have substantial
+        experience working with various databases such as MS SQL, Firebase, and
+        MongoDB. This experience allows me to effectively manage data storage
+        and retrieval, ensuring that the applications I develop are not only
+        user-friendly but also data-efficient. My diverse skill set and
+        extensive experience enable me to develop robust and scalable software
+        solutions that meet the evolving needs of modern businesses. These
+        solutions are designed to leverage the power of technology to scale
+        business growth and efficiency.
       </motion.p>
-
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text=[17px]
+      max-w-3x1 leading-[30px]"
+      >
+        Outside of my professional life, I enjoy spending quality time with my
+        family and dogs. I also enjoy playing video games in my free time. Some
+        of the games I play are Stardew Valley, League of Legends, and Genshin
+        Impact. Anime is another passion of mine. I appreciate the creativity
+        and imagination that goes into each series, and I often find myself
+        captivated by the unique storylines, characters, and animations.
+      </motion.p>
+      <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className="mt-4 text-secondary text=[17px]
+      max-w-3x1 leading-[30px]"
+      >
+        Balancing my professional responsibilities with my personal hobbies and
+        passions helps me maintain a well-rounded lifestyle. It allows me to
+        stay motivated and passionate about my work while also ensuring that I
+        have time to relax and pursue my personal interests.
+      </motion.p>
       <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />

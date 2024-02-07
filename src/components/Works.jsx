@@ -18,9 +18,9 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2x1 sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2x1 sm:w-[360px] w-full h-full"
       >
-        <div className="relative w-full h-[230px]">
+        <div className="relative w-full h-[250px]">
           <img
             src={image}
             alt={name}
@@ -75,10 +75,10 @@ const Works = () => {
           className="mt-3 text-secondary
           text-[17px] max-w-3x1 leading-[30px]"
         >
-          I have worked on a variety of projects, ranging from web development.
-          The fo0llowing are some of my projects. It reflects my ability to
-          solve complex problems, write clean code and while managing different
-          technologies.
+          I have worked on a variety of projects, ranging from web development
+          to mobile development. The followings are some of my projects. It
+          reflects my ability to solve complex problems, write clean code and
+          while managing different technologies.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">
