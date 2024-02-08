@@ -20,6 +20,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-pattern": "url('/src/assets/herobg.jpg')",
+        "hero-pattern-mobile": "url('/src/assets/herobg_mobile.jpg')",
       },
     },
   },
