@@ -244,6 +244,15 @@ const testimonials = [
       "https://media.licdn.com/dms/image/C4D03AQHqR-j8X9iV8Q/profile-displayphoto-shrink_800_800/0/1640292659354?e=1712793600&v=beta&t=8kxIGBswKcHxif3tN3tDo7muydCmkRyl6ea_BBNlSJM",
     linkedin: "https://www.linkedin.com/in/david-olson-372521229/",
   },
+  {
+    testimonial:
+      "William is an exceptionally efficient developer who does not sacrifice attention to detail.",
+    name: "Alexandra Henry",
+    designation: "Director of Product Management",
+    company: "Abacus Group LLC",
+    image: "https://cdn-icons-png.flaticon.com/512/3177/3177440.png",
+    linkedin: "",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

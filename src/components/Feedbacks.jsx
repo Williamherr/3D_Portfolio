@@ -31,13 +31,21 @@ const FeedbackCard = ({
             {designation} of {company}
           </p>
         </div>
-        <a href={linkedin} className="hover:opacity-70">
+        {linkedin ? (
+          <a href={linkedin} className="hover:opacity-70">
+            <img
+              src={image}
+              alt={`feedback-by-${name}`}
+              className="w-10 h-10 rounded-full object-cover"
+            />
+          </a>
+        ) : (
           <img
             src={image}
             alt={`feedback-by-${name}`}
             className="w-10 h-10 rounded-full object-cover"
           />
-        </a>
+        )}
       </div>
     </div>
   </motion.div>
