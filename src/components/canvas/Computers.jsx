@@ -4,8 +4,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const pc = isMobile ? "macbook" : "desktop_pc";
-  const computer = useGLTF(`./${pc}/scene.gltf`);
+  const computer = useGLTF("./desktop_pc/scene.gltf");
+
   return (
     <mesh>
       <hemisphereLight intensity={0.15} groundColor="black" />
@@ -20,8 +20,8 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -2.5, -1] : [0, -3.25, -1.5]}
+        scale={isMobile ? 0.5 : 0.75}
+        position={isMobile ? [0, -2.5, -1.7] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -36,7 +36,6 @@ const ComputersCanvas = () => {
     setIsMobile(mediaQuery.matches);
 
     const handleMediaQueryChange = (e) => {
-      console.log(e.matches);
       setIsMobile(e.matches);
     };
 
@@ -46,7 +45,7 @@ const ComputersCanvas = () => {
     };
   }, []);
 
-  return (
+  const canvas = (
     <Canvas
       frameloop="demand"
       shadows
@@ -64,6 +63,8 @@ const ComputersCanvas = () => {
       <Preload all />
     </Canvas>
   );
+
+  return isMobile ? <></> : canvas;
 };
 
 export default ComputersCanvas;
