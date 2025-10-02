@@ -20,6 +20,9 @@ import {
   nextjs,
   nextjs_white,
   dotnet,
+  blazor,
+  nasa,
+  
 } from "../assets";
 
 export const navLinks = [
@@ -46,13 +49,17 @@ const services = [
     title: "Full Stack",
     icon: mobile,
   },
-  {
-    title: "Next Developer",
-    icon: nextjs_white,
-  },
+  // {
+  //   title: "Next Developer",
+  //   icon: nextjs_white,
+  // },
   {
     title: "React Developer",
     icon: reactjs,
+  },
+  {
+    title: ".NET Developer",
+    icon: blazor,
   },
 ];
 
@@ -109,15 +116,39 @@ const technologies = [
     name: ".Net Core",
     icon: dotnet,
   },
+    {
+    name: "Blazor",
+    icon: blazor,
+  },
 ];
 
 const experiences = [
+  {
+    title: "Software Engineer I",
+    company_name: "NASA / COLSA / Insight Global ",
+    icon: nasa,
+    iconBg: "#FFFFFF",
+    date: "September 2024 - October 2025",
+    startDate: 2024,
+    points: [
+      "Developed cross-platform application for GIS Configuration form with MAUIHybrid Blazor, resulting in increased seamless functionality.",
+      "Developed and published NuGet packages for Blazor components to GitLab, facilitating seamless reuse and integration across multiple projects.",
+      "Created JSON Schema validation for GIS Configuration, reducing configuration bug resolution time by 30%, increasing team productivity and overall system reliability.",
+      "Created MS Testing automation scripts, reducing manual testing efforts per release cycle, saving time and resources for the team.",
+      "Configured and updated ArcGIS Map server and portal for IIS, enhancing data accessibility and user experience within 3 months.",
+      "Automated the extraction of map properties using ArcPy scripts, resulting in a 30% reduction in manual data handling time.",
+      "Migrated legacy JavaScript scripts to Jython, resulting in a 40% reduction in execution time and improved integration with existing Java applications.",
+      "Migrated legacy ArcMap workflows to ArcGIS Pro using Python scripts, and successfully published them to the server.",
+      "Utilized Oracle SQL to perform complex data queries.",
+    ],
+  },
   {
     title: "Full Stack Software Engineer",
     company_name: "Abacus Group LLC",
     icon: abacus,
     iconBg: "#FFFFFF",
-    date: "August 2019",
+    date: "August 2019 - February 2024",
+    startDate: 2019,
     points: [
       "CRM: Maintained dashboards and created web applications.",
       "Developed MVC web pages using C#, JavaScript, HTML, and CSS.",
