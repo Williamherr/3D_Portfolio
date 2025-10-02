@@ -22,8 +22,10 @@ import nextjs from "./tech/nextjs.svg";
 import nextjs_white from "./tech/nextjs_white.svg";
 
 import dotnet from "./tech/dotnet.svg";
+import blazor from "./tech/blazor.png";
 
 import abacus from "./company/abacus_group_logo.png";
+import nasa from "./company/nasa.png";
 
 import rush from "./project/rush.jpg";
 import tilt from "./project/tilt.jpg";
@@ -56,4 +58,6 @@ export {
   nextjs,
   nextjs_white,
   dotnet,
+  nasa,
+  blazor
 };
